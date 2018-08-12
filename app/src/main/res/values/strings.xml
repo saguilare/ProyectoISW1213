@@ -13,4 +13,6 @@
     <string name="btEnviarCod">Enviar SMS</string>
     <string name="tvDescripcion">Cuando se selecciona el boton se enviara un codigo de verificacion el cual debera ingresar en el siguiente campo</string>
     <string name="btIngresar">Ingresar</string>
+    <string name="title_activity_maps">Map</string>
+
 </resources>
