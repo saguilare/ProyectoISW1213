@@ -27,7 +27,8 @@ public class AgregarActivity extends AppCompatActivity {
 
     EditText ubicacion;
     Button btnCargarImagen;
-    RatingBar ratingBar;
+    RatingBar rb;
+    Float rating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,15 @@ public class AgregarActivity extends AppCompatActivity {
 
         ubicacion = (EditText) findViewById(R.id.etGps);
         btnCargarImagen = (Button)findViewById(R.id.btnAgregarFoto);
+        rb = (RatingBar)findViewById(R.id.ratingBar);
+
+        rb.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener(){
+            @Override
+            public void onRatingChanged(RatingBar ratingBar,float rate,boolean fromUser){
+                rating = rate;
+
+            }
+        });
 
 
     }

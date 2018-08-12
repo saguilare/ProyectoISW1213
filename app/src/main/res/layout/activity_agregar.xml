@@ -102,9 +102,8 @@
 
             <EditText
                 android:id="@+id/etGps"
-                android:layout_width="204dp"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
