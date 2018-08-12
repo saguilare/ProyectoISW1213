@@ -14,5 +14,8 @@
     <string name="tvDescripcion">Cuando se selecciona el boton se enviara un codigo de verificacion el cual debera ingresar en el siguiente campo</string>
     <string name="btIngresar">Ingresar</string>
     <string name="title_activity_maps">Map</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_lugar_recycle_v">LugarRecycleVActivity</string>
 
 </resources>
