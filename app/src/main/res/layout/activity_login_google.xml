@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".LoginGoogleActivity">
 
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accesar Google Oauth"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="122dp" />
 </android.support.constraint.ConstraintLayout>

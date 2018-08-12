@@ -25,6 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void AbrirLoginGoogle(View view){
         Intent intent = new Intent(this,LoginGoogleActivity.class);
-        startActivity(intent); 
+        startActivity(intent);
     }
 }
