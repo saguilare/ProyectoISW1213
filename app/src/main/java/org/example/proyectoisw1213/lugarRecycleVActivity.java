@@ -8,13 +8,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class lugarRecycleVActivity extends AppCompatActivity {
@@ -52,7 +49,7 @@ public class lugarRecycleVActivity extends AppCompatActivity {
             if (lugares != null)
 
             for (Lugar item : lugares) {
-                items.add(new Lugar(R.drawable.example_appwidget_preview, item.getlugar().toString(), 230));
+                items.add(item);
             }
 
 

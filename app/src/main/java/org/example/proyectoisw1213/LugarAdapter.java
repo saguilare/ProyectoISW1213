@@ -7,23 +7,38 @@ import android.support.v7.widget.RecyclerView;
         import android.view.View;
         import android.view.ViewGroup;
         import android.widget.ImageView;
-        import android.widget.TextView;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
-        import java.util.List;
+import com.google.android.gms.maps.MapView;
+
+import java.util.List;
 
 public class LugarAdapter extends RecyclerView.Adapter<LugarAdapter.LugarViewHolder> {
     private List<Lugar> items;
     public static class LugarViewHolder extends RecyclerView.ViewHolder {
         // Campos respectivos de un item
-        public ImageView imagen;
-        public TextView nombre;
-        public TextView visitas;
+        public ImageView foto;
+        public TextView lugar;
+        public TextView tipo;
+        public TextView gps;
+        public TextView comentario;
+        public TextView ubicacion;
+        public RatingBar rating;
+        public MapView map;
+
 
         public LugarViewHolder(View v) {
             super(v);
-            imagen = (ImageView) v.findViewById(R.id.imagen);
-            nombre = (TextView) v.findViewById(R.id.nombre);
-            visitas = (TextView) v.findViewById(R.id.visitas);
+            foto = (ImageView) v.findViewById(R.id.fotoCard);
+            lugar = (TextView) v.findViewById(R.id.lugarCard);
+            tipo = (TextView) v.findViewById(R.id.tipoCard);
+            gps = (TextView) v.findViewById(R.id.gpsCard);
+            comentario = (TextView) v.findViewById(R.id.comentarioCard);
+            ubicacion = (TextView) v.findViewById(R.id.ubicacionCard);
+            rating = (RatingBar) v.findViewById(R.id.ratingCard);
+
+
         }
     }
     public LugarAdapter(List<Lugar> items) {
@@ -41,8 +56,13 @@ public class LugarAdapter extends RecyclerView.Adapter<LugarAdapter.LugarViewHol
     }
     @Override
     public void onBindViewHolder(LugarViewHolder viewHolder, int i) {
-        viewHolder.imagen.setImageResource(items.get(i).getImagen());
-        viewHolder.nombre.setText(items.get(i).getNombre());
-        viewHolder.visitas.setText("Visitas:"+items.get(i).getVisitas());
+        viewHolder.foto.setImageBitmap(items.get(i).getfoto());
+        viewHolder.ubicacion.setText("Ubic:"+items.get(i).getubicacion());
+        viewHolder.tipo.setText("Tipo:"+items.get(i).gettipo());
+        viewHolder.gps.setText("GPS:"+items.get(i).getgps());
+        viewHolder.comentario.setText(items.get(i).getcomentario());
+        viewHolder.rating.setRating(items.get(i).getrating());
+        viewHolder.lugar.setText("Lugar:"+items.get(i).getlugar());
+
     }
 }

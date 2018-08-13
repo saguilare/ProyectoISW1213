@@ -4,9 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 public class Lugar {
-    private int imagen;  //guarda el id de la imagen almacenada en la carpeta drawable
-    private String nombre;
-    private int visitas;
+
 
     private String user;
     private String lugar;
@@ -17,11 +15,7 @@ public class Lugar {
     private String comentario;
     private Float rating;
 
-    public Lugar(int imagen, String nombre, int visitas) {
-        this.imagen = imagen;
-        this.nombre = nombre;
-        this.visitas = visitas;
-    }
+
 
     public Lugar(String user, String lugar, String tipo, String ubicacion, String  gps, Bitmap foto, String comentario, Float rating) {
         this.user = user;
@@ -58,13 +52,5 @@ public class Lugar {
     }
     public Float getrating(){ return rating;}
 
-    public String getNombre() {
-        return nombre;
-    }
-    public int getVisitas() {
-        return visitas;
-    }
-    public int getImagen() {
-        return imagen;
-    }
+
 }
