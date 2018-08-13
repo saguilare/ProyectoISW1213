@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tiposNivel">
+        <item>Niño</item>
+        <item>Novato</item>
+        <item>Experto</item>
+    </string-array>
+    <string-array name="tiposNivelValores">
+        <item>10</item>
+        <item>100</item>
+        <item>1000</item>
+    </string-array>
+</resources>

@@ -1,18 +1,29 @@
 <resources>
-    <string name="app_name">ProyectoISW1213</string>
+    <string name="app_name">Proyecto ISW</string>
     <string name="tvUser">Correo</string>
     <string name="tvPass">Password</string>
-    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="title_activity_nav_drawer">Inicio </string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_title">Bienvenido</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">COnfiguracion</string>
     <string name="tvTel">Digitar numero telefonico</string>
     <string name="btEnviarCod">Enviar SMS</string>
     <string name="tvDescripcion">Cuando se selecciona el boton se enviara un codigo de verificacion el cual debera ingresar en el siguiente campo</string>
     <string name="btIngresar">Ingresar</string>
     <string name="title_activity_maps">Map</string>
+
+
+    <!--Preferencias-->
+    <string name="mnConfigur">Configuración</string>
+    <string name="prtMusica">Música de fondo</string>
+    <string name="prsMusica">Reproducir un tema musical de fondo</string>
+    <string name="prtMaximo">Intentos</string>
+    <string name="prsMaximo">Número máximo de intentos para adivinar</string>
+    <string name="prtNivel">Nivel</string>
+    <string name="prsNivel">Niveles del juego</string>
+    <string name="btPreferencias">ver preferencias</string>
 
 </resources>
