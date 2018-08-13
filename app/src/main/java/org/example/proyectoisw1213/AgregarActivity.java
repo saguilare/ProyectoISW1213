@@ -20,6 +20,8 @@ import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -35,6 +37,7 @@ public class AgregarActivity extends AppCompatActivity {
     Float rating;
     Bitmap bitmap;
 
+    private FirebaseAuth mAuth;
     private AdminBD data;
     private SQLiteDatabase conn;
 
@@ -57,6 +60,14 @@ public class AgregarActivity extends AppCompatActivity {
 
             }
         });
+        mAuth = FirebaseAuth.getInstance();
+
+
+        if(mAuth.getCurrentUser()!=null){
+            FirebaseUser fbuser = mAuth.getCurrentUser();
+            Toast.makeText(AgregarActivity.this, "Su accion se ejecuto con exito"+fbuser.getEmail(), Toast.LENGTH_SHORT).show();
+
+        }
 
 
     }
