@@ -44,6 +44,7 @@ public class AgregarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_agregar);
 
         data= new AdminBD(this,"datos",null,1);
+        //this.deleteDatabase("datos");
 
         ubicacion = (EditText) findViewById(R.id.etGps);
         btnCargarImagen = (Button)findViewById(R.id.btnAgregarFoto);

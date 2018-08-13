@@ -112,6 +112,8 @@ public class NavDrawerActivity extends AppCompatActivity
             Intent intent = new Intent(this,AgregarActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_lugares) {
+            Intent intent = new Intent(this,lugarRecycleVActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_preferencias) {
 
