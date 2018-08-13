@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="musica"
+        android:summary="@string/prsMusica"
+        android:title="@string/prsMusica" />
+    <EditTextPreference
+        android:defaultValue="3"
+        android:key="intentos"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/prsMaximo"
+        android:title="@string/prtMaximo" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/tiposNivel"
+        android:entryValues="@array/tiposNivelValores"
+        android:key="nivel"
+        android:summary="@string/prsNivel"
+        android:title="@string/prtNivel" />
+</PreferenceScreen>
