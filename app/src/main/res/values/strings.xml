@@ -24,6 +24,10 @@
     <string name="prtMusica">Música de fondo</string>
     <string name="prsMusica">Reproducir un tema musical de fondo</string>
     <string name="prtMaximo">Intentos</string>
+    <string name="prtLog">Estado Usuario</string>
+    <string name="prsLog">Determinar si usuario permanece conectado</string>
+    <string name="prtFiltro">Filtros de busqueda</string>
+    <string name="prsFiltro">Tipos de filtros para desplegar informacion</string>
     <string name="prsMaximo">Número máximo de intentos para adivinar</string>
     <string name="prtNivel">Nivel</string>
     <string name="prsNivel">Niveles del juego</string>
