@@ -41,10 +41,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:onClick="requestCode"
-        android:text="Button"
+        android:text="@string/btEnviarCod"
         app:layout_constraintTop_toBottomOf="@+id/etNum"
-        tools:layout_editor_absoluteX="133dp"
-        tools:text="@string/btEnviarCod" />
+        tools:layout_editor_absoluteX="133dp" />
 
     <Button
         android:id="@+id/btIngresar"

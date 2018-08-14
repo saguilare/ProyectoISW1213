@@ -10,4 +10,15 @@
         <item>100</item>
         <item>1000</item>
     </string-array>
+
+    <string-array name="tiposFiltro">
+        <item>Por Evaluacion</item>
+        <item>Por Tipo</item>
+
+    </string-array>
+    <string-array name="tiposFiltroValores">
+        <item>1</item>
+        <item>2</item>
+
+    </string-array>
 </resources>

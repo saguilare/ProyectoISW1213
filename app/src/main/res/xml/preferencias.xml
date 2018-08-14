@@ -5,7 +5,7 @@
         android:defaultValue="false"
         android:key="musica"
         android:summary="@string/prsMusica"
-        android:title="@string/prsMusica" />
+        android:title="@string/prtMusica" />
     <EditTextPreference
         android:defaultValue="3"
         android:key="intentos"
@@ -20,4 +20,16 @@
         android:key="nivel"
         android:summary="@string/prsNivel"
         android:title="@string/prtNivel" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="log"
+        android:summary="@string/prsLog"
+        android:title="@string/prtLog" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/tiposFiltro"
+        android:entryValues="@array/tiposFiltroValores"
+        android:key="filtro"
+        android:summary="@string/prsFiltro"
+        android:title="@string/prtFiltro" />
 </PreferenceScreen>
