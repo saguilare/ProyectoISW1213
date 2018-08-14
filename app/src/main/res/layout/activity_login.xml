@@ -49,8 +49,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Ingresar"
+        android:text="@string/btIngresar"
         app:layout_constraintTop_toBottomOf="@+id/etPassword"
         tools:layout_editor_absoluteX="159dp" />
+
+    <Button
+        android:id="@+id/btRegresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="RegresarMain"
+        android:text="@string/btRegresar"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        tools:layout_editor_absoluteX="157dp" />
 
 </android.support.constraint.ConstraintLayout>

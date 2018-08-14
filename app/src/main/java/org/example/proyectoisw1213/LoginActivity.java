@@ -87,4 +87,10 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
     }
+
+    public void RegresarMain(View view){
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

@@ -114,6 +114,12 @@ public class LoginTelefonoActivity extends AppCompatActivity {
         signInWithCredential(PhoneAuthProvider.getCredential(mVerificationId, code));
     }
 
+    public void RegresarMain(View view){
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 
 
 }

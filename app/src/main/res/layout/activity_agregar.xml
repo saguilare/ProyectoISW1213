@@ -218,6 +218,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/ratingBar"
                 tools:layout_editor_absoluteX="8dp" />
 
+            <Button
+                android:id="@+id/btnRegresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="RegresarMainNav"
+                android:text="@string/btRegresar"
+                app:layout_constraintTop_toBottomOf="@+id/btnSalvar"
+                tools:layout_editor_absoluteX="229dp" />
+
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 

@@ -6,7 +6,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Bienvenido</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_subtitle">aguilarsteven@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">COnfiguracion</string>
     <string name="tvTel">Digitar numero telefonico</string>
@@ -17,6 +17,7 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="title_activity_lugar_recycle_v">LugarRecycleVActivity</string>
+    <string name="btRegresar">Regresar</string>
 
 
     <!--Preferencias-->
@@ -32,5 +33,12 @@
     <string name="prtNivel">Nivel</string>
     <string name="prsNivel">Niveles del juego</string>
     <string name="btPreferencias">ver preferencias</string>
+
+
+    <string name="tvIngresoDescrip">Favor seleccionar el metodo de ingreso</string>
+    <string name="btCorreo">Correo</string>
+    <string name="btTelefono">Telefono</string>
+    <string name="btGoogle">Google</string>
+    <string name="btIngresarGoogle">Accesar Google</string>
 
 </resources>

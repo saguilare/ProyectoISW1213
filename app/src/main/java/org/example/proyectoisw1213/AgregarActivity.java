@@ -148,6 +148,10 @@ public class AgregarActivity extends AppCompatActivity {
             //((EditText)findViewById(R.id.etCodigo)).setText("");
             //((EditText)findViewById(R.id.etDescripcion)).setText("");
             //((EditText)findViewById(R.id.etPrecio)).setText("");
+
+            //Mata activity y lo vuelve a llamar
+            this.newAdd();
+
         }catch(Exception e){
             Toast.makeText(AgregarActivity.this, "Error: Su accion no se ejecuto", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
@@ -158,6 +162,19 @@ public class AgregarActivity extends AppCompatActivity {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 0, outputStream);
         return outputStream.toByteArray();
+    }
+
+    public void newAdd(){
+        finish();
+        Intent intent = new Intent(this,AgregarActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void RegresarMainNav(View view){
+        Intent intent = new Intent(this,NavDrawerActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
 
