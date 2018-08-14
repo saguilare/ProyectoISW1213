@@ -65,7 +65,7 @@ public class AgregarActivity extends AppCompatActivity {
 
         if(mAuth.getCurrentUser()!=null){
             FirebaseUser fbuser = mAuth.getCurrentUser();
-            Toast.makeText(AgregarActivity.this, "Su accion se ejecuto con exito"+fbuser.getEmail(), Toast.LENGTH_SHORT).show();
+
 
         }
 
@@ -122,7 +122,7 @@ public class AgregarActivity extends AppCompatActivity {
 
             byte[] foto = getBitmapAsByteArray(bitmap);
 
-            String usuario = "testuser";
+            String usuario = "aguilarsteven@gmail.com";
             String lugar = ((EditText)findViewById(R.id.etNombre)).getText().toString();
             String tipo = ((EditText)findViewById(R.id.etTipo)).getText().toString();
             String ubicacion = ((EditText)findViewById(R.id.etUbicacion)).getText().toString();

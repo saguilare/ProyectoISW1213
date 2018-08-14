@@ -14,62 +14,85 @@
         <ImageView
             android:id="@+id/fotoCard"
             android:layout_width="100dp"
-            android:layout_height="150dp"
+            android:layout_height="134dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/lugarCard"
             android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/gpsCard"
-            android:layout_width="92dp"
+            android:layout_width="209dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="108dp"
+            android:layout_alignStart="@+id/ubicacionCard"
+            android:layout_marginTop="127dp"
             android:text="GPS:" />
 
         <TextView
             android:id="@+id/ubicacionCard"
-            android:layout_width="92dp"
+            android:layout_width="209dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="76dp"
+            android:layout_alignStart="@+id/tipoCard"
+            android:layout_marginTop="97dp"
             android:text="Ubicacion:" />
 
         <TextView
             android:id="@+id/tipoCard"
-            android:layout_width="92dp"
+            android:layout_width="209dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="46dp"
+            android:layout_alignStart="@+id/lugarCard"
+            android:layout_marginTop="64dp"
             android:text="Tipo::" />
 
         <TextView
             android:id="@+id/lugarCard"
-            android:layout_width="92dp"
+            android:layout_width="209dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="13dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginTop="34dp"
             android:text="Lugar:" />
 
         <EditText
             android:id="@+id/comentarioCard"
             android:layout_width="match_parent"
             android:layout_height="67dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="194dp"
-            android:editable="false"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="90dp"
             android:ems="10"
+            android:focusable="false"
             android:inputType="textMultiLine" />
 
         <RatingBar
             android:id="@+id/ratingCard"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="27dp" />
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"
+            android:numStars="5" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/comentarioCard"
+            android:layout_alignParentStart="true"
+            android:text="Comentarios" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/comentarioCard"
+            android:layout_marginTop="-90dp"
+            android:text="Calificacion" />
 
 
     </RelativeLayout>

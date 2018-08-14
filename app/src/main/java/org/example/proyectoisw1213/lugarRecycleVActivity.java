@@ -88,9 +88,9 @@ public class lugarRecycleVActivity extends AppCompatActivity {
 
         //get user  from session
         //int codigo = Integer.parseInt(((EditText)findViewById(R.id.etCodigo)).getText().toString());
-        usuario = "testuser";
+        usuario = "aguilarsteven@gmail.com";
         //Cursor fila = conn.rawQuery("select * from favoritos where user="+usuario.toString(),null);
-        Cursor fila = conn.rawQuery("select * from favoritos ",null);
+        Cursor fila = conn.rawQuery("select * from favoritos where user like '"+usuario+"'",null);
         if (fila.moveToFirst()){
 
             lugares = new ArrayList<Lugar>();
