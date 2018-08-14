@@ -7,24 +7,42 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.btnCorreo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                crearInt("email");
+            }
+        });
+
+        findViewById(R.id.btnGoggle).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                crearInt("google");
+            }
+        });
+
+        findViewById(R.id.btnTel).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                crearInt("telefono");
+            }
+        });
+
     }
 
-    public void AbrirLoginEmail(View view){
-        Intent intent = new Intent(this,LoginActivity.class);
+
+    public void crearInt(String tipo){
+        Intent intent = IntentFactory.crear(this, tipo);
         startActivity(intent);
     }
 
-    public void AbrirLoginTelefono(View view){
-        Intent intent = new Intent(this,LoginTelefonoActivity.class);
-        startActivity(intent);
-    }
 
-    public void AbrirLoginGoogle(View view){
-        Intent intent = new Intent(this,LoginGoogleActivity.class);
-        startActivity(intent);
-    }
+
 }
