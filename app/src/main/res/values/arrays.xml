@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="tiposNivel">
-        <item>Niño</item>
-        <item>Novato</item>
-        <item>Experto</item>
+    <string-array name="tiposColor">
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Amarillo</item>
+        <item>Azul</item>
     </string-array>
-    <string-array name="tiposNivelValores">
-        <item>10</item>
-        <item>100</item>
-        <item>1000</item>
-    </string-array>
-
-    <string-array name="tiposFiltro">
-        <item>Por Evaluacion</item>
-        <item>Por Tipo</item>
-
-    </string-array>
-    <string-array name="tiposFiltroValores">
+    <string-array name="tiposColorValores">
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 
+    <string-array name="ubicacion">
+        <item>Alajuela</item>
+        <item>San Jose</item>
+        <item>Cartago</item>
+        <item>Puntarenas</item>
+        <item>Guanacaste</item>
+        <item>Limon</item>
+        <item>Heredia</item>
+
+    </string-array>
+    <string-array name="ubicacionValor">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+
+    </string-array>
+
+
+    <string-array name="tiposEntrada">
+        <item>Hotel</item>
+        <item>Restaurante</item>
+        <item>Casino</item>
+
+    </string-array>
+    <string-array name="tiposEntradaValor">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
     </string-array>
 </resources>

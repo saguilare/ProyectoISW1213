@@ -2,10 +2,12 @@ package org.example.proyectoisw1213;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -70,6 +72,14 @@ public class AgregarActivity extends AppCompatActivity {
         }
 
 
+        //Preferencia: Esconde el boton en el formulario
+        this.hideButton();
+
+        //Preferencia: Llena el tipo en formulario
+        this.llenarTipo();
+
+        //Preferencia: Llena el ubicacion en formulario
+        this.llenarUbicacion();
     }
 
     public void seleccionarFoto(View view){
@@ -176,5 +186,65 @@ public class AgregarActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    public void hideButton(){
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+        Boolean esconde = pref.getBoolean("esconder", false);
+        Button btnRegresar = (Button)findViewById(R.id.btnRegresar);
+
+        if (esconde){
+            btnRegresar.setVisibility(View.INVISIBLE );
+        }
+    }
+
+    public void llenarTipo(){
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+        String tipo = pref.getString("tipoGuardar", "1");
+        EditText tipoEt = (EditText)findViewById(R.id.etTipo);
+
+        if (tipo.equals("1")){
+            tipoEt.setText("Hotel");
+        }
+        if(tipo.equals("2")){
+            tipoEt.setText("Restaurante");
+        }
+
+        if(tipo.equals("3")){
+            tipoEt.setText("Casino");
+        }
+    }
+
+    public void llenarUbicacion(){
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+        String ubicacion = pref.getString("ubicacion", "1");
+        EditText ubicacionEt = (EditText)findViewById(R.id.etUbicacion);
+
+        if (ubicacion.equals("1")){
+            ubicacionEt.setText("Alajuela");
+        }
+        if(ubicacion.equals("2")){
+            ubicacionEt.setText("San Jose");
+        }
+
+        if(ubicacion.equals("3")){
+            ubicacionEt.setText("Cartago");
+        }
+
+        if(ubicacion.equals("4")){
+            ubicacionEt.setText("Puntarenas");
+        }
+
+        if(ubicacion.equals("5")){
+            ubicacionEt.setText("Guanacaste");
+        }
+
+        if(ubicacion.equals("6")){
+            ubicacionEt.setText("Limon");
+        }
+
+        if(ubicacion.equals("7")){
+            ubicacionEt.setText("Heredia");
+        }
+    }
+
 }
 

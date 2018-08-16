@@ -3,33 +3,33 @@
 
     <CheckBoxPreference
         android:defaultValue="false"
-        android:key="musica"
+        android:key="fondoPantalla"
         android:summary="@string/prsMusica"
         android:title="@string/prtMusica" />
-    <EditTextPreference
-        android:defaultValue="3"
-        android:key="intentos"
-        android:selectAllOnFocus="true"
-        android:singleLine="true"
-        android:summary="@string/prsMaximo"
-        android:title="@string/prtMaximo" />
     <ListPreference
         android:defaultValue="1"
-        android:entries="@array/tiposNivel"
-        android:entryValues="@array/tiposNivelValores"
-        android:key="nivel"
+        android:entries="@array/tiposColor"
+        android:entryValues="@array/tiposColorValores"
+        android:key="fondo"
         android:summary="@string/prsNivel"
         android:title="@string/prtNivel" />
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="log"
-        android:summary="@string/prsLog"
-        android:title="@string/prtLog" />
     <ListPreference
         android:defaultValue="1"
-        android:entries="@array/tiposFiltro"
-        android:entryValues="@array/tiposFiltroValores"
-        android:key="filtro"
-        android:summary="@string/prsFiltro"
-        android:title="@string/prtFiltro" />
+        android:entries="@array/tiposEntrada"
+        android:entryValues="@array/tiposEntradaValor"
+        android:key="tipoGuardar"
+        android:summary="@string/prsLog"
+        android:title="@string/prtLog" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="esconder"
+        android:summary="@string/prsBtn"
+        android:title="@string/prsBtn" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/ubicacion"
+        android:entryValues="@array/ubicacionValor"
+        android:key="ubicacion"
+        android:summary="@string/prsUbicacion"
+        android:title="@string/prtUbicacion" />
 </PreferenceScreen>

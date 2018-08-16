@@ -22,17 +22,18 @@
 
     <!--Preferencias-->
     <string name="mnConfigur">Configuración</string>
-    <string name="prtMusica">Música de fondo</string>
-    <string name="prsMusica">Reproducir un tema musical de fondo</string>
-    <string name="prtMaximo">Intentos</string>
-    <string name="prtLog">Estado Usuario</string>
-    <string name="prsLog">Determinar si usuario permanece conectado</string>
-    <string name="prtFiltro">Filtros de busqueda</string>
-    <string name="prsFiltro">Tipos de filtros para desplegar informacion</string>
+    <string name="prtMusica">Cambiar Imagen</string>
+    <string name="prsMusica">Cambiar imagen de fondo</string>
+    <string name="prtBtn">Botones</string>
+    <string name="prsBtn">Esconder botones de regresar</string>
+    <string name="prsLog">Determina el tipo que se desea almacenar</string>
+    <string name="prtUbicacion">Ubicacion</string>
+    <string name="prsUbicacion">Determinar la ubicacion que se almacenara</string>
     <string name="prsMaximo">Número máximo de intentos para adivinar</string>
-    <string name="prtNivel">Nivel</string>
-    <string name="prsNivel">Niveles del juego</string>
+    <string name="prtNivel">Color Activity Menu</string>
+    <string name="prsNivel">Cambiar color de la app en el activity menu</string>
     <string name="btPreferencias">ver preferencias</string>
+    <string name="prtLog">Tipo</string>
 
 
     <string name="tvIngresoDescrip">Favor seleccionar el metodo de ingreso</string>
@@ -40,5 +41,7 @@
     <string name="btTelefono">Telefono</string>
     <string name="btGoogle">Google</string>
     <string name="btIngresarGoogle">Accesar Google</string>
+
+    <string name="btAplicar">Aplicar preferencias</string>
 
 </resources>
